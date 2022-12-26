@@ -8,3 +8,27 @@ content-type: application/json
     "email": "newuser@asdf.com",
     "password": "supersecret"
 }
+
+
+###Find a particular user with a given ID
+
+GET http://localhost:3000/auth/2
+
+
+###Find all users with a given email
+
+GET http://localhost:3000/auth?
+
+###Delete a user with a given id
+
+DELETE http://localhost:3000/auth/1
+
+
+### Update a user
+
+PATCH http://localhost:3000/auth/2
+content-type: application/json 
+
+{
+    "password": "aaaaaaa"
+}
