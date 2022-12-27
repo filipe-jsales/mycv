@@ -12,7 +12,7 @@ content-type: application/json
 
 ###Find a particular user with a given ID
 
-GET http://localhost:3000/auth/2
+GET http://localhost:3000/auth/44
 
 
 ###Find all users with a given email
@@ -21,7 +21,7 @@ GET http://localhost:3000/auth?
 
 ###Delete a user with a given id
 
-DELETE http://localhost:3000/auth/1
+DELETE http://localhost:3000/auth/1233
 
 
 ### Update a user
