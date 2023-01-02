@@ -5,10 +5,19 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "newuser@asdf.com",
-    "password": "supersecret"
+    "email": "filipe@gmail.com",
+    "password": "pedro"
 }
 
+### SIGN IN
+
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "filipe@gmail.com",
+    "password": "pedrso"
+}
 
 ###Find a particular user with a given ID
 
