@@ -7,15 +7,6 @@ export class AppService {
 
 
     
-
-
-
-    return 'Hello World!'
-
-
-
-
-
-
+    return 'Hello World!';
   }
 }
