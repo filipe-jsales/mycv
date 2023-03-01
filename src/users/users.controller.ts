@@ -26,7 +26,7 @@ import { UsersService } from './users.service';
 export class UsersController {
   constructor(
     private usersService: UsersService,
-    private authService: AuthService,
+    private authService: AuthService
   ) {}
 
   // @Get('/whoami')

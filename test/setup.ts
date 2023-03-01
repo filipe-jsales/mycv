@@ -12,7 +12,7 @@ global.beforeEach(async () => {
         } else {
           console.log('deleted');
         }
-      },
+      }
     );
   } catch (err) {}
 });
