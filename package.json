@@ -80,7 +80,8 @@
     "testEnvironment": "node"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,js,jsx,json,css,scss,md}": "prettier --write"
+    "src/**/*.{ts,tsx,js,jsx,json,css,scss,md}": "prettier --write",
+    "**/*": "prettier --write --ignore-unknown"
   },
   "husky": {
     "hooks": {
