@@ -18,12 +18,7 @@ export class AuthService {
     const users = await this.usersService.find(email);
 
     if (users.length) {
-
-
-
       throw new BadRequestException('email in use');
-
-      
     }
     //Hash the users password
     //Generate a salt
@@ -54,6 +49,9 @@ export class AuthService {
     const hash = (await scrypt(password, salt, 32)) as Buffer;
 
     if (hash.toString('hex') !== storedHash) {
+
+
+      
       throw new BadRequestException('Bad password');
     }
     //sigin successfull
