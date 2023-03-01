@@ -49,10 +49,14 @@ export class AuthService {
     const hash = (await scrypt(password, salt, 32)) as Buffer;
 
     if (hash.toString('hex') !== storedHash) {
+      throw new BadRequestException('Bad password');
+
 
 
       
-      throw new BadRequestException('Bad password');
+
+
+
     }
     //sigin successfull
     return user;
