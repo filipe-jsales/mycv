@@ -50,9 +50,7 @@ export class AuthService {
 
     if (hash.toString("hex") !== storedHash) {
       throw new BadRequestException("Bad password");
-      //teste
     }
-    //sigin successfull
     return user;
   }
 }
